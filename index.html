@@ -1,54 +1,14 @@
 <html> 
-
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script>
-		function processKeyDown(event) {
-			var key_pressed = event.which;
-
-			if (key_pressed == 37) {
-				document.getElementById("left_arrow_img").src = "img/left_press.jpg";
-			}
-			else if (key_pressed == 38) {
-				document.getElementById("up_arrow_img").src = "img/up_press.jpg";
-			}
-			else if (key_pressed == 39) {
-				document.getElementById("right_arrow_img").src = "img/right_press.jpg";
-			}
-			else if (key_pressed == 40) {
-				document.getElementById("down_arrow_img").src = "img/down_press.jpg";
-			}
-
-		}
-		
-		function processKeyUp(event) {
-			var key_pressed = event.which;
-			
-			if (key_pressed == 37) {
-				document.getElementById("left_arrow_img").src = "img/left.jpg";
-			}
-			else if (key_pressed == 38) {
-				document.getElementById("up_arrow_img").src = "img/up.jpg";
-			}
-			else if (key_pressed == 39) {
-				document.getElementById("right_arrow_img").src = "img/right.jpg";
-			}
-			else if (key_pressed == 40) {
-				document.getElementById("down_arrow_img").src = "img/down.jpg";
-			}
-
-		}
-	</script>
-	<title>John's Raspberry Pi</title>
-	
-</head>
-<body onkeydown="processKeyDown(event)" onkeyup="processKeyUp(event)">
-		
-	<img id="up_arrow_img" src="img/up.jpg" />
-	<p></p>
-	<img id="left_arrow_img" src="img/left.jpg" />
-	<img id="down_arrow_img" src="img/down.jpg" />
-	<img id="right_arrow_img" src="img/right.jpg" />
-
-</body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+		<title>John's Raspberry Pi</title>	
+	</head>
+	<body onkeydown="processKeyDown(event)" onkeyup="processKeyUp(event)">
+		<img id="up_arrow_img" src="img/up.jpg" />
+		<p></p>
+		<img id="left_arrow_img" src="img/left.jpg" />
+		<img id="down_arrow_img" src="img/down.jpg" />
+		<img id="right_arrow_img" src="img/right.jpg" />
+	</body>
 </html>
