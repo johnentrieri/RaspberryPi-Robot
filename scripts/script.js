@@ -3,19 +3,31 @@ function processKeyDown(event) {
 	
 	if (key_pressed == 37) {
 		document.getElementById("left_arrow_img").src = "img/left_press.jpg";
-		$(document).load("cgi-bin/pin7on.cgi");
+		$(document).load("cgi-bin/pin1on.cgi");
+		$(document).load("cgi-bin/pin2off.cgi");
+		$(document).load("cgi-bin/pin3on.cgi");
+		$(document).load("cgi-bin/pin4off.cgi");
 	}
 	else if (key_pressed == 38) {
 		document.getElementById("up_arrow_img").src = "img/up_press.jpg";
+		$(document).load("cgi-bin/pin1off.cgi");
+		$(document).load("cgi-bin/pin2off.cgi");
 		$(document).load("cgi-bin/pin4on.cgi");
+		$(document).load("cgi-bin/pin3on.cgi");
 	}
 	else if (key_pressed == 39) {
 		document.getElementById("right_arrow_img").src = "img/right_press.jpg";
+		$(document).load("cgi-bin/pin1off.cgi");
 		$(document).load("cgi-bin/pin2on.cgi");
+		$(document).load("cgi-bin/pin3off.cgi");
+		$(document).load("cgi-bin/pin4on.cgi");
 	}
 	else if (key_pressed == 40) {
 		document.getElementById("down_arrow_img").src = "img/down_press.jpg";
-		$(document).load("cgi-bin/pin3on.cgi");
+		$(document).load("cgi-bin/pin1on.cgi");
+		$(document).load("cgi-bin/pin2on.cgi");
+		$(document).load("cgi-bin/pin3off.cgi");
+		$(document).load("cgi-bin/pin4off.cgi");
 	}		
 }
 		
@@ -24,18 +36,30 @@ function processKeyUp(event) {
 	
 	if (key_pressed == 37) {
 		document.getElementById("left_arrow_img").src = "img/left.jpg";
-		$(document).load("cgi-bin/pin7off.cgi");
+		$(document).load("cgi-bin/pin1off.cgi");
+		$(document).load("cgi-bin/pin2off.cgi");
+		$(document).load("cgi-bin/pin3off.cgi");
+		$(document).load("cgi-bin/pin4off.cgi");
 	}
 	else if (key_pressed == 38) {
 		document.getElementById("up_arrow_img").src = "img/up.jpg";
+		$(document).load("cgi-bin/pin1off.cgi");
+		$(document).load("cgi-bin/pin2off.cgi");
+		$(document).load("cgi-bin/pin3off.cgi");
 		$(document).load("cgi-bin/pin4off.cgi");
 	}
 	else if (key_pressed == 39) {
 		document.getElementById("right_arrow_img").src = "img/right.jpg";
+		$(document).load("cgi-bin/pin1off.cgi");
 		$(document).load("cgi-bin/pin2off.cgi");
+		$(document).load("cgi-bin/pin3off.cgi");
+		$(document).load("cgi-bin/pin4off.cgi");
 	}
 	else if (key_pressed == 40) {
 		document.getElementById("down_arrow_img").src = "img/down.jpg";
+		$(document).load("cgi-bin/pin1off.cgi");
+		$(document).load("cgi-bin/pin2off.cgi");
 		$(document).load("cgi-bin/pin3off.cgi");
+		$(document).load("cgi-bin/pin4off.cgi");
 	}
 }
